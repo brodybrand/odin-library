@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(233, 219, 206);
+    border: 1px solid black;
+}
+
+.wrapper {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr;
+
+    padding: 0 10%;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.sidebar {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+}
+
+:modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.user-input {
+    display: flex;
+}
+
+form {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+fieldset {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+fieldset label {
+    width: 100%;
+}
+
+
+
+.container {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 15px;
+}
+
+.container .book {
+
+}
+
+.footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
